@@ -1,66 +1,136 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Styles */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-image: url('https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/b/bd/Blue-galaxy-gif-sky-Favim.com-5044543.gif/revision/latest?cb=20180302221226');
-}
-
-h1 {
+  background-image: url("present-bunch-holiday-valentine-petal.jpg"); /* Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
   color: #333;
+}
+
+/* App Container */
+.app {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px; /* Adds space between the product list and cart */
+}
+
+/* Product List Container */
+.container {
+  width: 60%;
+  background-color: rgb(37, 36, 33);
+  padding: 20px;
+  margin-left: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  font-size: 24px;
+  color:white;
   margin-bottom: 20px;
-}
-
-.input-section {
-  margin-bottom: 20px;
-}
-
-input {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  margin: 5px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-.timer-section {
   text-align: center;
 }
 
-h2 {
+.searchContainer {
+  display: flex;
+  gap: 10px;
   margin-bottom: 20px;
-  font-size: 1.5rem;
 }
 
-.times-up {
-  color: red;
-  font-weight: bold;
+.input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.timer-section button {
-  margin: 0 5px;
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:grey;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color:grey;
+}
+
+.count {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.addToCartButton {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color:rgb(63, 59, 59);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addToCartButton:hover {
+  background-color: #515852;
+}
+
+/* Cart Styles */
+.cartContainer {
+  width: 35%;
+  background-color: rgb(40, 34, 34);
+  padding: 20px;
+  border-radius: 8px;
+  color:black;
+  box-shadow: 0 4px 8px rgba(237, 233, 233, 0.2);
+  margin-left: 50px; /* Optional: Adds extra spacing between the containers */
+}
+
+.cartContainer h2 {
+  color:white;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.cartList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cartItem {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+}
+
+.cartContainer .button {
+  width: 100%;
+  margin-top: 10px;
 }
